@@ -1,0 +1,31 @@
+profile: tabular-data-resource
+name: curated_violations
+path: curated_violations.csv
+version: 0.1.0
+title: Curated Housing and Health Code Violations shared from the City of Cincinnati
+  Department of Buildings & Inspections
+homepage: https://github.com/geomarker-io/curated_violations
+schema:
+  fields:
+    address:
+      name: address
+      type: string
+    parcel_number:
+      name: parcel_number
+      type: string
+    violation_id:
+      name: violation_id
+      type: string
+    violation_type:
+      name: violation_type
+      type: string
+    date:
+      name: date
+      type: date
+    violation_city_category:
+      name: violation_city_category
+      type: string
+      constraints:
+        enum:
+        - health
+        - housing
