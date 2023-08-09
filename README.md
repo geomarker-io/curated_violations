@@ -4,10 +4,16 @@ The goal of this repository is to curate data regularly shared from the City of 
 
 ## reading data
 
-Read from a release, using codec:
+Read from the latest version available in the repository here on GitHub with:
 
 ```{r}
-codec::read_tdr_csv("")
+codec::read_tdr_csv("https://raw.githubusercontent.com/geomarker-io/curated_violations/main/curated_violations/tabular-data-resource.yaml")
+```
+
+Read from a specific [release](https://github.com/geomarker-io/curated_violations/releases); e.g., for [version 0.1.0](https://github.com/geomarker-io/curated_violations/releases/tag/0.1.0):
+
+```{r}
+codec::read_tdr_csv("https://github.com/geomarker-io/curated_violations/releases/download/0.1.0/tabular-data-resource.yaml")
 ```
 
 ## creating data
