@@ -15,7 +15,8 @@ d <-
     parcel_number = PARCEL,
     violation_id = V.I.D,
     violation_type = `VIOLATION TYPE`,
-    date = ISSUED)
+    date = ISSUED) |>
+  distinct()
 
 d$parcel_number <- gsub("[^[:alnum:]]", "", d$parcel_number)
 
@@ -24,6 +25,6 @@ d |>
   add_attrs(name = "curated_violations",
             title  = "Curated Housing and Health Code Violations shared from the City of Cincinnati Department of Buildings & Inspections",
             homepage = "https://github.com/geomarker-io/curated_violations",
-            version = "0.1.1") |>
+            version = "0.1.2") |>
   write_tdr_csv()
   

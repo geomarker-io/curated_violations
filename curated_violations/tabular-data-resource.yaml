@@ -1,7 +1,7 @@
 profile: tabular-data-resource
 name: curated_violations
 path: curated_violations.csv
-version: 0.1.1
+version: 0.1.2
 title: Curated Housing and Health Code Violations shared from the City of Cincinnati
   Department of Buildings & Inspections
 homepage: https://github.com/geomarker-io/curated_violations
