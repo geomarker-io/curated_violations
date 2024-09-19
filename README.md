@@ -1,3 +1,5 @@
+**This repository is deprecated in favor of https://github.com/geomarker-io/parcel**
+
 # curated_violations
 
 The goal of this repository is to curate data regularly shared from the City of Cincinnati Department of Buildings & Inspections.
